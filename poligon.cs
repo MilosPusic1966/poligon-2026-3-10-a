@@ -51,5 +51,18 @@ namespace poligon_2026_3_10_a
             }
             izlaz.Close();
         }
+        public static poligon ucitaj()
+        {
+            StreamReader ulaz = new StreamReader("poligon.txt");
+            int n = Convert.ToInt32(ulaz.ReadLine());
+            poligon novi = new poligon(n);
+            for (int i = 0; i < n; i++)
+            {
+                novi.teme[i].x= Convert.ToDouble(ulaz.ReadLine());
+                novi.teme[i].y = Convert.ToDouble(ulaz.ReadLine());
+            }
+            ulaz.Close();
+            return novi;
+        }
     }
 }
