@@ -43,6 +43,13 @@ namespace poligon_2026_3_10_a
         {
             StreamWriter izlaz = new StreamWriter("poligon.txt");
             izlaz.WriteLine(br_temena);
+            for (int i = 0; i < br_temena; i++)
+            {
+                izlaz.WriteLine(teme[i].x);
+                izlaz.WriteLine(teme[i].y);
+                
+            }
+            izlaz.Close();
         }
     }
 }

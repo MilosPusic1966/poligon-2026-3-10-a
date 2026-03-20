@@ -34,6 +34,7 @@ namespace poligon_2026_3_10_a
             poligon prvi = new poligon(n);
             prvi.unos();
             prvi.stampaj();
+            prvi.snimi();
         }
     }
 }
