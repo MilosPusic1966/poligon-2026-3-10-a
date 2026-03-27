@@ -45,5 +45,17 @@ namespace poligon_2026_3_10_a
             tacka finalna = this.centriraj();
             return finalna.d();
         }
+        static public bool seku_se(vektor a, vektor b)
+        {
+            int a_b = ravan.SIS(a, b.pocetak, b.kraj);
+            Console.WriteLine("ab"+a_b.ToString());
+            int b_a = ravan.SIS(b, a.pocetak, a.kraj);
+            Console.WriteLine("ab" + b_a.ToString());
+            if (a_b * b_a !=0 ) 
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
