@@ -48,9 +48,9 @@ namespace poligon_2026_3_10_a
         static public bool seku_se(vektor a, vektor b)
         {
             int a_b = ravan.SIS(a, b.pocetak, b.kraj);
-            Console.WriteLine("ab"+a_b.ToString());
+            Console.WriteLine("a b"+a_b.ToString());
             int b_a = ravan.SIS(b, a.pocetak, a.kraj);
-            Console.WriteLine("ab" + b_a.ToString());
+            Console.WriteLine("b a" + b_a.ToString());
             if (a_b * b_a !=0 ) 
             {
                 return true;

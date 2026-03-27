@@ -44,13 +44,23 @@ namespace poligon_2026_3_10_a
             double obim = jovan.obim();
             Console.WriteLine("Obim="+obim.ToString());
             */
-            /*
-            poligon jovan = new poligon(6);
-            jovan.unos();
-            jovan.snimi();
-            */
+            
             poligon jovan = poligon.ucitaj();
+            
+            // jovan.snimi();
+            jovan.stampaj();
             Console.WriteLine(jovan.prost());            
+            // poligon jovan = poligon.ucitaj();
+            // Console.WriteLine(jovan.prost());            
+            /*
+            tacka a= new tacka(0,0);
+            tacka b = new tacka(1, 0.5);
+            tacka c = new tacka(2, 0);
+            tacka d = new tacka(2, 2);
+            vektor ab = new vektor(a, b);
+            vektor cd = new vektor(c, d);
+            Console.WriteLine(vektor.seku_se(ab, cd));
+            */
         }
     }
 }

@@ -86,6 +86,7 @@ namespace poligon_2026_3_10_a
         }
         public bool prost()
         {
+            /*
             bool isto = false;
             for (int i = 0; i < br_temena-1; i++)
             {
@@ -96,6 +97,7 @@ namespace poligon_2026_3_10_a
             }
             Console.WriteLine("isto="+ isto.ToString());
             if (isto) return false;
+            */
             vektor[] str = stranice();
             bool presek = false;
             for (int i = 0; i < br_temena-2; i++)
@@ -103,10 +105,10 @@ namespace poligon_2026_3_10_a
                 int kraj;
                 if (i == 0) kraj = br_temena - 1;
                 else kraj = br_temena;
-                for (int j = 0; j < kraj; j++)
+                for (int j = i+2; j < kraj; j++)
                 {
                     if (vektor.seku_se(str[i], str[j])) presek = true;
-                    Console.WriteLine("presek=" + presek.ToString());
+                    Console.WriteLine("presek={0} {1} {2}",i,j,  presek.ToString());
                 }
             }
             if (presek) return false;
