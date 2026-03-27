@@ -71,12 +71,18 @@ namespace poligon_2026_3_10_a
             {
                 str[i] = new vektor(teme[i], teme[i + 1]);
             }
-            str[br_temena] = new vektor(teme[br_temena], teme[0]);
+            str[br_temena-1] = new vektor(teme[br_temena-1], teme[0]);
             return str;
         }
         public double obim()
         {
-            return 0;
+            vektor[] str = stranice();
+            double obim = 0;
+            for (int i = 0; i < br_temena; i++)
+            {
+                obim += str[i].duzina();
+            }
+            return obim;
         }
     }
 }

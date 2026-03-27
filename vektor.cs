@@ -40,7 +40,7 @@ namespace poligon_2026_3_10_a
             double k = A.x * B.y - A.y * B.x;
             return k;
         }
-        double duzina()
+        public double duzina()
         {
             tacka finalna = this.centriraj();
             return finalna.d();

@@ -37,8 +37,11 @@ namespace poligon_2026_3_10_a
             // prvi.unos();
             // prvi.stampaj();
             // prvi.snimi();
-            poligon drugi = poligon.ucitaj();
-            drugi.stampaj();
+            poligon jovan = new poligon(4);
+            jovan.unos();
+            jovan.stampaj();
+            double obim = jovan.obim();
+            Console.WriteLine("Obim="+obim.ToString());
         }
     }
 }
