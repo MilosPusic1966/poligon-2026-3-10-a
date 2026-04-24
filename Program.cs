@@ -45,22 +45,27 @@ namespace poligon_2026_3_10_a
             Console.WriteLine("Obim="+obim.ToString());
             */
             
-            poligon jovan = poligon.ucitaj();
+            // poligon jovan = poligon.ucitaj();
             
             // jovan.snimi();
-            jovan.stampaj();
-            Console.WriteLine(jovan.prost());            
+            // jovan.stampaj();
+            // Console.WriteLine(jovan.prost());            
             // poligon jovan = poligon.ucitaj();
             // Console.WriteLine(jovan.prost());            
-            /*
-            tacka a= new tacka(0,0);
-            tacka b = new tacka(1, 0.5);
-            tacka c = new tacka(2, 0);
-            tacka d = new tacka(2, 2);
-            vektor ab = new vektor(a, b);
-            vektor cd = new vektor(c, d);
-            Console.WriteLine(vektor.seku_se(ab, cd));
-            */
+            
+            
+            poligon prvi = new poligon(5);
+            tacka a = new tacka(1, 1);
+            tacka b = new tacka(3, 1);
+            tacka c = new tacka(3, 3);
+            tacka d = new tacka(2, 4);
+            tacka e = new tacka(1, 3);
+            prvi.teme[0] = a;
+            prvi.teme[1] = b;
+            prvi.teme[2] = c;
+            prvi.teme[3] = d;
+            prvi.teme[4] = e;
+            Console.WriteLine(prvi.konveksan());
         }
     }
 }

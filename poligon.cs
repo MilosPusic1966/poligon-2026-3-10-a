@@ -9,8 +9,8 @@ namespace poligon_2026_3_10_a
 {
     internal class poligon
     {
-        int br_temena;
-        tacka[] teme;
+        public int br_temena;
+        public tacka[] teme;
         public poligon (int n)
         {
             br_temena= n;
@@ -113,6 +113,22 @@ namespace poligon_2026_3_10_a
             }
             if (presek) return false;
             else return true;
+        }
+        public bool konveksan()
+        {
+            vektor[] str = stranice();
+            int T = 0;
+            for (int i = 0; i < br_temena; i++)
+            {
+                double ugao = vektor.VP(str[i], str[(i + 1) % br_temena]);
+                if (ugao > 0) T++;
+            }
+            if ((T == br_temena) || (T==0)) return true;
+            return false;
+        }
+        public double povrsina()
+        {
+            return 0;
         }
     }
 }
